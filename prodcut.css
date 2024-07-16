@@ -1,0 +1,282 @@
+body{
+    background-color: #fff;
+}
+
+.breadcrum { 
+    padding: 10px  20px;
+    font-size: 12px;
+    color: #565656;
+}
+.prodcut-display { 
+    min-height: 100%;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.prodcut-d-img { 
+    display: flex;
+    gap: 10px;
+
+}
+
+.prodcut-icons { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.prodcut-icons img { 
+    border: 1px  solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.prodcut-d-details { 
+    margin: 0 30px;
+
+}
+.prodcut-title { 
+    font-size: 25px;
+}
+
+.brand-store { 
+    margin-top: 5px;
+    color: #007185;
+    font-size: 14px;
+}
+.prodcut-rating { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.prodcut-rating div { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prodcut-rating p { 
+    color: #007185;
+}
+
+.prodcut-rating p span { 
+    color: #fff;
+    background-color: #c73500;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.prodcut-rating  h5  {
+    font-weight: 400;
+}
+
+.prodcut-d-price{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.prodcut-d-price div { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.prodcut-d-price div p  {
+    font-size: 26px;
+    color: #c73500;
+}
+
+.prodcut-d-price div h1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.prodcut-d-price div h1 span {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.prodcut-d-price div h5 {
+    font-weight: 400;
+    color: #565656;
+}
+
+.prodcut-d-price h5 span { 
+    text-decoration: line-through;
+
+}
+.prodcut-d-price p span { 
+    color: #007185;
+}
+
+.product-color-slection { 
+    margin: 15px 0;
+}
+
+.prodcut-color-option { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option { 
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #cbcbcb;
+    gap: 10px;
+}
+
+.prodcut-info { 
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 300px;
+    margin-bottom: 15px;
+
+}
+
+.prodcut-des  h1 { 
+    font-size: 20px;
+    margin: 15px 0;
+}
+.prodcut-des ul{ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.prodcut-d-purchase {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    padding: 20px;
+} 
+.prodcut-d-purchase .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.prodcut-d-purchase .price{
+    font-size:  16px;
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+.prodcut-d-purchase .price span{
+    font-size: 26px;
+    padding: 2px;
+}
+
+.prodcut-d-purchase .gap  {
+    margin: 15px 0;
+}
+
+.prodcut-d-purchase p span {
+    color: #007185;
+}
+
+.location { 
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.prodcut-stock { 
+    margin: 15px 0;
+    color: green;
+    font-weight: 400;
+}
+
+.prodcut-quantity { 
+    padding: 8px 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #efefef;
+    border-color: #c1c1c1;
+}
+
+.prodcut-d-purchase .btn { 
+    outline: none;
+    border: none;
+    background-color: #ffd814;
+    width: 100%;
+    padding: 10px 0 ;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.prodcut-d-purchase .product-buy  {
+    background-color: #ffa41c;
+}
+
+.prodcut-seller-info { 
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+    font-size: 14px;
+    color: #565656;
+
+}
+.prodcut-seller-info span {
+    color: #007185;
+}
+
+.prodcut-d-purchase  hr {
+    margin: 20px 0;
+
+}
+
+.prodcut-add-list { 
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: start;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.prodcut-footer { 
+    margin-top: 100px;
+}
+
+
+
+@media only screen and (max-width: 900px){
+    .prodcut-display{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .prodcut-icons{
+       display: none;
+    }
+    .prodcut-main-img img{
+        width: 100%;
+        padding: 20px;
+    }
+    .option{
+        padding: 6px 8px;
+    }
+    .option p {  
+        display: none;
+    }
+    .prodcut-d-purchase {
+        max-width: 90%;
+        margin: 20px auto 10px;
+    }
+}
+
